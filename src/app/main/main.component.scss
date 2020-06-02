@@ -1,0 +1,42 @@
+.toggle-icon {
+  display: none;
+}
+
+.bg-black {
+  background: #020101 !important;
+  position: relative;
+  top: 0;
+  padding: 16px 0 17px;
+  width: 100%;
+  color: #c0ddfa;
+}
+.nav-font {
+  color: #c0ddfa !important;
+  margin-top: 4px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 8vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar {
+    display: none ;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #imgSony {
+    display: none;
+  }
+  .nav-item {
+    display: none;
+  }
+
+  .toggle-icon {
+    display: block !important;
+  }
+}

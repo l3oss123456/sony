@@ -1,0 +1,54 @@
+
+
+
+<!-- <h1>Hello</h1>
+<ul>
+    <li><b>Name:</b> {{name}}</li>
+    <li><b>Age:</b> {{age}} years old</li>
+    <li><b>Address:</b> {{address.street}}, {{address.province}}, {{address.postcode}}</li>
+</ul>
+
+<h1>Edit Profile</h1>
+<form>
+    <div>
+        <label><b>Name : </b></label>
+        <input type="text" [(ngModel)]="name" name="name">
+    </div>
+
+    <div>
+        <label><b>Age : </b></label>
+        <input type="text" [(ngModel)]="age" name="age">
+    </div>
+
+    <div>
+        <label><b>Street : </b></label>
+        <input type="text" [(ngModel)]="address.street" name="address.street">
+    </div>
+
+    <div>
+        <label><b>Province : </b></label>
+        <input type="text" [(ngModel)]="address.province" name="address.province">
+    </div>
+
+    <div>
+        <label><b>PostCode : </b></label>
+        <input type="text" [(ngModel)]="address.postcode" name="address.postcode" maxlength="5">
+    </div>
+</form>
+
+<h1>Skills</h1>
+<form (submit) = "addSkill(skill.value)">
+    <div>
+        <label>Skill: </label>
+        <input type="text" #skill autofocus placeholder="Add new skill">
+        <button (click)="addSkill(skill.value)">+</button>
+    </div>
+</form>
+
+
+<ul>
+    <li style="list-style-type: none"  *ngFor="let skill of skills; let i = index">
+        {{i+1}}. {{skill}}
+        <button (click)="removeSkill(skill)">x</button>
+    </li>
+</ul> -->

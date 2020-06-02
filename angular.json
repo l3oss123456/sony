@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sony"
+    }
+  },
+  "defaultProject": "sony",
+  "cli": {
+    "analytics": "058b3a18-a26b-4add-bd39-72c3e3fe1005"
+  }
 }

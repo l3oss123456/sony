@@ -1,0 +1,9 @@
+.pictureSize {
+  width: 100% !important;
+  height: 480px !important;
+}
+@media only screen and (max-width: 768px) {
+  #carouselExampleControls {
+    display: none !important;
+  }
+}

@@ -1,0 +1,33 @@
+table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    color:  #f35429;;
+}
+
+
+.glyphicon:before {
+    color: #62666c;
+    width: auto;
+    height: auto;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse !important;
+    background: #f1f5f9;
+    font-weight: bold;
+    text-align: left;
+    padding: 21px 27px;
+    font-family: "SST_Medium";
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    padding-left: calc(100% - 272px);
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    width: 228px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+}

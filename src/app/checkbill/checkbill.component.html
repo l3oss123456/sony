@@ -1,0 +1,81 @@
+<div class="container" style="padding-top: 150px;">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col"></th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Sub Total</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let product of selectedProducts; let i = index">
+      <tr style="color: #62666c;">
+        <th scope="row">
+          <img
+            src="{{ product.src }}"
+            alt="{{ product.alt }}"
+            width="150px"
+            height="140px"
+          />
+        </th>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.price }} THB</td>
+        <td>{{ product.quantity }}</td>
+        <td style="color: black; font-weight: bold;">
+          {{ product.price * product.quantity }} THB
+        </td>
+        <td>
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+              <a class="nav-link nav-font nav-font" href="#">
+                <span class="glyphicon glyphicon-heart"></span>
+              </a>
+            </div>
+            <div class="col-md-auto">
+              <a class="nav-link nav-font nav-font">
+                <span
+                  class="glyphicon glyphicon-remove"
+                  (click)="cancelProduct(i)"
+                ></span
+              ></a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="d-flex flex-row bd-highlight">
+        <div class="p-2 bd-highlight">Sub total</div>
+        <div class="p-2 bd-highlight">{{ calSubTotal() }} THB</div>
+      </div>
+
+      <div class="d-flex flex-row bd-highlight">
+        <div class="p-2 bd-highlight">Total</div>
+        <div class="p-2 bd-highlight">{{ calSubTotal() }} THB</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column bd-highlight mb-3" style="padding-top: 30px;">
+    <div class="d-flex flex-row justify-content-md-end bd-highlight">
+      <div class="p-2 bd-highlight">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg"
+          [routerLink]="['']"
+        >
+          Continue Shopping
+        </button>
+      </div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-primary btn-lg">
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
